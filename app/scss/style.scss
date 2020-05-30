@@ -67,13 +67,13 @@
   color: white;
   text-align: center;
   &-title {
-    font-weight: 700;
+    @include f700;
     margin-bottom: 10px;
     font-size: 48px;
     line-height: 72px;
   }
   &-text {
-    font-weight: 500;
+    @include f500;
     margin-bottom: 50px;
     font-size: 20px;
     line-height: 30px;
@@ -89,14 +89,14 @@
       border-radius: 4px;
       height: 56px;
       border: none;
-      font-weight: 500;
+      @include f500;
       font-size: 14px;
       line-height: 30px;
       padding-left: 25px;
       padding-right: 60px;
       &::placeholder {
         color: #90a4ae;
-        font-weight: 500;
+        @include f500;
       }
     }
     button {
@@ -117,7 +117,7 @@
   background-color: $gray;
 }
 .products__title {
-  font-weight: 700;
+  @include f700;
   font-size: 48px;
   color: $bg;
   text-align: center;
@@ -164,7 +164,7 @@
     padding: 10px 30px;
     align-items: center;
     min-height: 90px;
-    font-weight: 500;
+    @include f500;
     color: $bg;
     border-bottom: 1px solid #e7ecf2;
   }
@@ -172,7 +172,7 @@
     max-width: 310px;
   }
   &-title {
-    font-weight: 500;
+    @include f500;
     font-size: 18px;
     display: block;
   }
@@ -183,7 +183,7 @@
   }
   &-price {
     font-size: 20px;
-    font-weight: 700;
+    @include f700;
   }
   &-info {
     display: flex;
@@ -208,7 +208,7 @@
     }
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
   &-star {
@@ -247,8 +247,8 @@
       display: inline-block;
       margin-left: 3px;
       margin-right: 3px;
-      &.slick-active{
-        button{
+      &.slick-active {
+        button {
           background-color: $green;
         }
       }
@@ -269,3 +269,73 @@
 }
 
 //end product-slider
+// start adventages
+.adventages {
+  background-color: $bg;
+  padding: 110px 0;
+  &__title {
+    color: white;
+    text-align: center;
+  }
+}
+.adventages__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.adventages__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 0 15px;
+  &:hover {
+    .adventages__item-images {
+      background-color: $green;
+      transition: all 0.3s;
+    }
+    .adventages__item-title {
+      color: $green;
+      transition: all 0.3s;
+    }
+    .adventages__item-images{
+      g{
+        fill: white;
+      }
+    }
+  }
+  &-images {
+    width: 114px;
+    height: 114px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+  }
+  &-title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: white;
+    @include f500;
+  }
+  &-text {
+    font-size: 15px;
+  }
+}
+.iconsg-1{
+  svg{
+    width: 50px;
+  }
+}
+.iconsg-2{
+  svg{
+    width: 70px;
+  }
+}
+.iconsg-3{
+  svg{
+    width: 86px;
+  }
+}
+
+
+//end adventages
