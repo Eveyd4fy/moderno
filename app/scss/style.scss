@@ -295,11 +295,11 @@
       color: $green;
       transition: all 0.5s;
     }
-    .adventages__item-images{
-      g{
+    .adventages__item-images {
+      g {
         fill: white;
       }
-      svg{
+      svg {
         fill: white !important;
       }
     }
@@ -324,18 +324,18 @@
     font-size: 15px;
   }
 }
-.iconsg-1{
-  svg{
+.iconsg-1 {
+  svg {
     width: 50px;
   }
 }
-.iconsg-2{
-  svg{
+.iconsg-2 {
+  svg {
     width: 70px;
   }
 }
-.iconsg-3{
-  svg{
+.iconsg-3 {
+  svg {
     width: 86px;
   }
 }
@@ -343,7 +343,7 @@
 //end adventages
 //start author
 
-.author{
+.author {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -351,56 +351,55 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &__box{
+  &__box {
     max-width: 650px;
     width: 100%;
     min-height: 215px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     background-color: $green;
-
   }
-  &__title{
+  &__title {
     color: white;
     font-size: 30px;
     line-height: 30px;
     margin-right: 45px;
     max-width: 265px;
-    span{
+    span {
       @include f700;
     }
   }
-   &__link{
-    padding: 14px 40px ;
+  &__link {
+    padding: 14px 40px;
     font-size: 18px;
     line-height: 24px;
     background-color: #fff;
-  } 
+  }
 }
 
 //end author
 //start tutorial
 
-.tutorial{
+.tutorial {
   padding: 70px 0 120px;
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
-  &__item{
+  &__item {
     max-width: 370px;
     width: 100%;
   }
 }
-.tutorial__item{
-  &-images{
+.tutorial__item {
+  &-images {
     min-height: 270px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  &-title{
+  &-title {
     @include f700;
     background-color: #f8f8f8;
     font-size: 24px;
@@ -411,3 +410,156 @@
 }
 
 //end tutorial
+//start footer
+
+.footer {
+  background-color: $bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+  }
+}
+.footer__copy {
+  border-top: 1px solid #919699;
+}
+.footer__copy-text {
+  text-align: center;
+  color: #919699;
+  font-size: 15px;
+  padding: 25px 0;
+}
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+  &-menu {
+    max-width: 220px;
+  }
+  &-title {
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      bottom: 0;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+  &-text {
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+}
+.footer__info {
+  margin-top: 10px;
+  @include f500;
+  color: white;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "\f041";
+    font-family: "icomoon";
+    color: $green;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+  }
+  &-phone {
+    &::before {
+      content: "\f095";
+    }
+  }
+}
+.footer__col-list {
+  a {
+    margin-bottom: 15px;
+    color: #b7c3c8;
+    padding-left: 22px;
+    position: relative;
+    &::before {
+      content: "\f105";
+      position: absolute;
+      left: 0;
+      font-size: 18px;
+      font-family: "icomoon";
+      color: $green;
+    }
+  }
+}
+.footer__social-link {
+  margin-bottom: 33px;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 7px;
+    }
+  }
+  a {
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/icons/css_sprites.png);
+  }
+}
+.link-twitter {
+  background-position: -28px 0;
+}
+.link-youtube {
+  background-position: 0 -28px;
+}
+.link-pinteres {
+  background-position: -28px -28px;
+}
+.link-linledin {
+  background-position: -56px 0;
+}
+.footer__form-title {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+}
+.footer__form {
+  position: relative;
+  input {
+    border: none;
+    background-color: #2f3c43;
+    width: 100%;
+    display: block;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    padding-left: 13px;
+    padding-right: 50px;
+    &::placeholder {
+      color: #697378;
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $green;
+    border: none;
+    height: 40px;
+    width: 43px;
+    cursor: pointer;
+    &::before {
+      content: "\f124";
+      position: absolute;
+      font-family: "icomoon";
+      color: white;
+      font-size: 20px;
+      top: 11px;
+      left: 13px;
+    }
+  }
+}
+
+//end footer
