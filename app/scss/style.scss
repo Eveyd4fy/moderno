@@ -484,7 +484,7 @@
     color: #b7c3c8;
     padding-left: 22px;
     position: relative;
-    &::before {
+    &:before {
       content: "\f105";
       position: absolute;
       left: 0;
