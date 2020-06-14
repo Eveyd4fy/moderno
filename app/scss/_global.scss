@@ -55,7 +55,7 @@ body {
         margin: 0 auto;
     }
 }
-.page-content{
+.page-content {
     background-color: $gray;
 }
 .title {
@@ -99,5 +99,17 @@ body {
             color: #b0bec5;
             cursor: pointer;
         }
+    }
+}
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f105";
+        font-family: "icomoon";
+        position: absolute;
+        color: $green;
+        left: 0;
+        font-size: 14px;
     }
 }
