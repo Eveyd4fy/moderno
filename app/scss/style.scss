@@ -1431,11 +1431,11 @@ button.icon-unsorted {
   display: flex;
   text-align: center;
   border: 1px solid #d7d7d7;
-  span{
+  span {
     position: relative;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif !important;
-    &::before{
+    font-family: "Roboto", sans-serif !important;
+    &::before {
       position: absolute;
       color: #d0d0d0;
       font-size: 16px;
@@ -1901,7 +1901,7 @@ button.icon-unsorted {
   max-width: 270px;
   width: 100%;
   margin-right: 30px;
-  & .footer__social-link{
+  & .footer__social-link {
     margin-bottom: 21px;
   }
 }
@@ -1991,7 +1991,7 @@ button.icon-unsorted {
   background-color: #fff;
   text-align: center;
   padding: 20px 5px 17px;
-  .rate-star{
+  .rate-star {
     margin-right: 0;
   }
   & + & {
@@ -2011,43 +2011,43 @@ button.icon-unsorted {
   font-size: 14px;
   @include f500;
 }
-.personal-box{
+.personal-box {
   background-color: #fff;
   padding: 35px 40px 23px;
   border: 1px solid #dedede;
 }
-.personal-box__title{
+.personal-box__title {
   font-size: 20px;
   @include f700;
   color: $bg;
   margin-bottom: 25px;
 }
-.personal-box__text{
+.personal-box__text {
   margin-bottom: 40px;
-  p{
+  p {
     color: #707070;
   }
 }
-.personal-box__item-head{
+.personal-box__item-head {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
   font-size: 16px;
   color: $bg;
 }
-.personal-box__item-name{
+.personal-box__item-name {
   @include f500;
   font-style: italic;
 }
-.personal-box__item-number{
+.personal-box__item-number {
   @include f700;
 }
-.personal-box__item-line{
+.personal-box__item-line {
   height: 15px;
   background-color: #f4f4f4;
   border-radius: 3px;
   margin-bottom: 23px;
-  span{
+  span {
     display: block;
     border-radius: 3px;
     height: 15px;
@@ -2057,4 +2057,123 @@ button.icon-unsorted {
 }
 
 // end profile
+//strat upload
+
+.upload__inner {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  margin-bottom: 110px;
+}
+.upload__inner-title {
+  padding: 16px 35px 18px;
+  font-size: 24px;
+  color: $bg;
+  @include f700;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #dedede;
+}
+.upload__inner-content {
+  margin-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 50px;
+  button {
+    color: #fff;
+    background-color: $green;
+    border: none;
+    padding: 15px 36px;
+    margin-left: 150px;
+    cursor: pointer;
+  }
+}
+.upload__line {
+  display: flex;
+  margin-bottom: 25px;
+  label {
+    color: #444;
+    padding-right: 15px;
+    width: 175px;
+    padding-top: 5px;
+    span {
+      color: $green;
+    }
+    &::placeholder {
+      color: #707070;
+    }
+  }
+  select,
+  input,
+  textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding: 0px 18px;
+  }
+  textarea {
+    resize: none;
+    height: 150px;
+    padding: 8px 18px;
+  }
+  .jq-selectbox {
+    width: 100%;
+  }
+  .jq-selectbox__select {
+    height: 40px;
+    padding: 0 18px;
+    border: 1px solid #dedede;
+    border-bottom-color: #dedede;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: "Roboto-Regular", sans-serif;
+    color: #707070;
+    text-shadow: none;
+    line-height: 40px;
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+  .jq-file {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+  }
+  .jq-file__name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 18px;
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    line-height: 40px;
+    font-size: 12px;
+    color: #707070;
+    margin-left: 100px;
+    outline: none ;
+  }
+  .jq-file__browse {
+    top: 5px;
+    right: auto;
+    left: 9px;
+    font-size: 12px;
+    line-height: 26px;
+    padding:0 12px;
+    border-left: 1px solid #d7d7d7;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    text-shadow: none;
+    color: #444444;
+}
+}
+//end upload
+
 @import "media";
